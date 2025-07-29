@@ -1,9 +1,12 @@
 #sobre {
-    padding: 96px 48px 0 48px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 p, li {
-    font-size: 1.2rem;
+    /* font-size: 16px; */
 }
 
 .container {
@@ -19,7 +22,7 @@ p, li {
     height: 300px;
     border-radius: 100%;
     margin-right: 20px;
-    box-shadow: 0px 0px 10px 1px rgb(139, 22, 202);
+    box-shadow: 0px 0px 5px 0.5px #b79bd0;
 }
 
 .info {
@@ -52,7 +55,8 @@ p, li {
 
 @media screen and (max-width: 490px) {
     #sobre {
-    padding: 32px 48px 0 48px;
+        padding: 120px 48px 0;
+        margin-bottom: 20px;
     }
 
     #foto-perfil {
