@@ -17,7 +17,13 @@
     margin-right: 20px;
 }
 
-.container div {
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.info div {
     padding: 16px;
     border-radius: 8px;
     background-color: rgb(39, 39, 39);
@@ -27,13 +33,24 @@
     gap: 8px;
 }
 
+.habilidades {
+    margin-left: 24px;
+    text-align: start;
+}
+
 .container div p{
     margin-top: 12px;
     font-size: 1.2rem;
     text-align: justify;
 }
 
+
+
 @media screen and (max-width: 490px) {
+    #sobre {
+    padding: 32px 48px 0 48px;
+    }
+
     #foto-perfil {
         width: 200px;
         height: 200px;
