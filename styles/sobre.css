@@ -1,0 +1,47 @@
+#sobre {
+    padding: 96px 48px 0 48px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+#foto-perfil {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+.container div {
+    padding: 16px;
+    border-radius: 8px;
+    background-color: rgb(39, 39, 39);
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.container div p{
+    margin-top: 12px;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+@media screen and (max-width: 490px) {
+    #foto-perfil {
+        width: 200px;
+        height: 200px;
+    }
+
+    .container div {
+        text-align: center;
+    }
+    
+}
+
