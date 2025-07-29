@@ -2,6 +2,10 @@
     padding: 96px 48px 0 48px;
 }
 
+p, li {
+    font-size: 1.2rem;
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -15,6 +19,7 @@
     height: 300px;
     border-radius: 100%;
     margin-right: 20px;
+    box-shadow: 0px 0px 10px 1px rgb(139, 22, 202);
 }
 
 .info {
@@ -40,7 +45,6 @@
 
 .container div p{
     margin-top: 12px;
-    font-size: 1.2rem;
     text-align: justify;
 }
 
