@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/sobre.css">
     <link rel="stylesheet" href="./styles/projetos.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 </head>
 <body>
     <header>
@@ -26,9 +30,9 @@
                 </li>
             </ul>
 
-            <button id="mobile_btn" class="btn-default">
-                
-            </button>
+            <i id="mobile_btn" class="fa-solid fa-bars"></i>
+
+            <!-- <i class="fa-solid fa-bars"></i> -->
         </nav>
 
         <div id="mobile_menu">
@@ -49,18 +53,23 @@
     <main>
         <section id="sobre">
             <div class="container">
-                <img id="foto-perfil" src="./img/foto-perfil.png" alt="Foto de perfil" >
+                <div class="img-card">
+                    <img id="foto-perfil" src="./img/foto-perfil.png" alt="Foto de perfil" >
+    
+                    <a href="./assets/CURRÍCULO.pdf" target="_blank"> Baixar Currículo</a>
+                </div>
                 
                 <div class="info">
                     <div>
-                        <h2>Jacinto Bengui</h2>
-                        <h3>Desenvolvedor .NET</h3>
+                        <h3>Jacinto Bengui</h3>
+                        <h4 style="color: #b79bd0;">Desenvolvedor .NET</h4>
                         <p>Técnico de Gestão de Sistemas Informáticos formado no  Instituto Politécnico Industrial de
                         Luanda (IPIL)</p>
                     </div>
 
                     <div>
-                        <h3>Tecnologias e Habilidades</h3>
+                        <h4>Tecnologias e Habilidades</h4>
+                        <code>
                         <ul class="habilidades">
                             <li> C-Sharp (C#)</li>
                             <li>ASP.NET</li>
@@ -74,6 +83,7 @@
                             <li>Git e GitHub</li>
                             <li>Docker</li>
                         </ul>
+                        </code>
                     </div>
                 </div>    
             </div>
@@ -81,46 +91,101 @@
         </section>
 
         <section id="projetos">
+
+            <h2 style="color: #b79bd0;">Alguns Projetos</h2>
+            <div class="cards">
             <div class="card">
-                <img src="./img/foto-perfil.png" alt="">
+                <img src="./img/app-clima.png" alt="">
                 <div class="card-description">
-                    <h3>Projeto 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore amet reprehenderit voluptatibus ea esse! Iste iure dolorem ipsum? Nihil omnis possimus earum eos explicabo repellendus maiores suscipit, iusto incidunt.</p>
-                    <button>
-                        Visitar Projeto
+                    <h4>App de Clima</h4>
+                    <p>Applicativo que mostra informações do clima de cidades ao redor do mundo em tempo real</p>
+                    <button class="open-modal" data-modal="modal" data-id="1">
+                        Ver mais
                     </button>
                 </div>
                 </div>
             <div class="card">
-                <img src="./img/foto-perfil.png" alt="">
+                <img src="./img/app-bemestar.png" alt="">
                 <div class="card-description">
-                    <h3>Projeto 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore amet reprehenderit voluptatibus ea esse! Iste iure dolorem ipsum? Nihil omnis possimus earum eos explicabo repellendus maiores suscipit, iusto incidunt.</p>
-                    <button>
-                        Visitar Projeto
+                    <h4>Portal do Administrador</h4>
+                    <p>Applicativo desktop que serve para gerenciar os dados do sistema e do aplicativo móvel "BemEstar"</p>
+                    <button class="open-modal" data-modal="modal" data-id="2">
+                        Ver mais
                     </button>
                 </div>
             </div>
             <div class="card">
-                <img src="./img/foto-perfil.png" alt="">
+                <img src="./img/app-dima.png" alt="">
                 <div class="card-description">
-                    <h3>Projeto 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore amet reprehenderit voluptatibus ea esse! Iste iure dolorem ipsum? Nihil omnis possimus earum eos explicabo repellendus maiores suscipit, iusto incidunt.</p>
-                    <button>
-                        Visitar Projeto
+                    <h4>Dima</h4>
+                    <p>Aplicativo de controle financeiro que serve para registrar transações e ver um resumo financeiro</p>
+                    <button class="open-modal" data-modal="modal" data-id="3">
+                        Ver mais
                     </button>
                 </div>
             </div>
-        </section>
-
-        <section id="contacto">
-
+            <div class="card">
+                <img src="./img/app-ia.png" alt="">
+                <div class="card-description">
+                    <h4>Assistente IA para Jogos</h4>
+                    <p>Aplicativo integrado a Gemini IA do Google para fornecer informações sobre jogos </p>
+                    <button class="open-modal" data-modal="modal" data-id="4">
+                        Ver mais
+                    </button>
+                </div>
+            </div>
+            <!-- <div class="card">
+                <video controls src="./videos/app-bemestar.mp4" alt=""></video>
+                <div class="card-description">
+                    <h4>Bem-Estar</h4>
+                    <p>Aplicativo de gestão de saúde preventiva</p>
+                    <button class="open-modal" data-modal="modal" data-id="5">
+                        Ver mais
+                    </button>
+                </div>
+            </div> -->
+            </div>
         </section>
     </main>
 
-    <footer>
-
+    <footer id="contacto">
+        <div class="container">
+            <a href="mailto:gersobengui2006@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                E-mail
+            </a>
+            <a href="Tel:+244948362224">
+                <i class="fa-brands fa-whatsapp"></i>
+                948362224
+            </a>
+            <a href="https://github.com/jacintobengui" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+            </a>
+        </div>
     </footer>
+
+    <!--Modais / Pop-Ups-->
+        <dialog id="modal">
+            <div>
+                <div class="slider">
+                    <div class="slides">
+                        <img id="modal-img1" src="./img/app-ia.png" alt="">
+                        <img id="modal-img2" src="./img/app-clima.png" alt="">
+                        <img id="modal-img3" src="./img/app-bemestar.png" alt="">
+                        <img id="modal-img4" src="./img/app-dima.png" alt="">
+                    </div>
+                </div>
+                <div class="img-nav-buttons">
+                    <button id="right">Anterior</button>
+                    <button id="left">Próximo</button>
+                </div>
+                <h3 id="modal-nome">Assistente IA para Jogos</h3>
+                <p id="modal-descricao">Aplicativo integrado a Gemini IA do Google para fornecer informações sobre jogos </p>
+                <a href="#">Visitar repositório GitHub</a>
+                <button class="close-modal" data-modal="app-ia"></button>
+            </div>
+        </dialog>
 
     <script src="./script.js"></script>
 </body>

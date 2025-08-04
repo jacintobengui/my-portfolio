@@ -1,7 +1,14 @@
 #projetos {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.cards {
+    text-align: start;
+    width: 100vw;
     min-height: 100vh;
     padding: 0px 48px;
-    padding-top: 120px;
+    padding-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,10 +25,11 @@
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
-.card img {
+.card img, video {
     width: 100%;
-    height: 200px;
+    height: 180px;
     border-radius: 8px 8px 0px 0px;
+    object-fit: fill;
 }
 
 .card-description {
@@ -42,5 +50,116 @@
     border-radius: 8px;
     margin-top: 12px;
     border: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
+}
+
+dialog {
+    max-width: 650px;
+    padding: 16px;
+    border-radius: 16px;
+    margin: auto;
+    background-color: #b79bd0;   
+    box-sizing: initial;
+}
+
+dialog div {   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    box-sizing: initial;
+}
+
+dialog div .slider {
+    width: 100%;
+    height: 320px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+dialog div .slider .slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+}
+
+dialog div .slider .slides img {
+    width: 25%;
+    height: 100%;
+}
+
+dialog div .slider .slides video{
+    width: 25%;
+    height: 100%;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.close-modal {
+    width: 30px;
+    height: 30px;
+    background: url(../img/icons8-close.svg) no-repeat center;
+    border-radius: 100%;
+    padding: 16px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 10;
+    left: 90;
+}
+
+.img-nav-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.img-nav-buttons button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: gray;
+    cursor: pointer;
+}
+
+#modal div a {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 490px) {
+    /* dialog {
+        height: 60vh;
+    } */
+
+    dialog div .slider {
+        height: 200px;
+    }   
+
+    .img-nav-buttons button {
+        font-size: 1rem;  
+        padding: 8px 16px;
+    }
+
+    p {
+        text-align: justify;
+    }
+
 }
