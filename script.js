@@ -8,6 +8,7 @@ const projetos = [
         id: 1,
         nome: 'App de Clima',
         descricao: 'Applicativo que mostra informações do clima de cidades ao redor do mundo em tempo real',
+        link: 'https://github.com/jacintobengui/blazor-weatherapp',
         imagens: [
             './img/app-clima.png',
         ]
@@ -16,6 +17,7 @@ const projetos = [
         id: '2',
         nome: 'Portal do Administrador',
         descricao: 'Applicativo desktop que serve para gerenciar os dados do sistema e do aplicativo móvel "BemEstar"',
+        link: 'https://github.com/18geovani/Bem-Estar-App',
         imagens: [
             './img/app-bemestar.png',
             './img/app-bemestar2.png',
@@ -27,6 +29,7 @@ const projetos = [
         id: 3,
         nome: 'Dima',
         descricao: 'Aplicativo de controle financeiro que serve para registrar transações e ver um resumo financeiro',
+        link: 'https://github.com/jacintobengui/desafio-ca-a-aos-bugs-balta.io',
         imagens: [
             './img/app-dima.png',
             './img/app-dima2.png',
@@ -38,6 +41,7 @@ const projetos = [
         id: 4,
         nome: 'Assistente IA para Jogos',
         descricao: 'Aplicativo integrado a Gemini IA do Google para fornecer informações sobre jogos',
+        link: 'https://github.com/jacintobengui/assistente-ia-jogos',
         imagens: [
             './img/app-ia.png',
         ]
@@ -46,6 +50,7 @@ const projetos = [
         id: 5,
         nome: 'Bem-Estar',
         descricao: 'Aplicativo de gestão de saúde preventiva',
+        link: 'https://github.com/18geovani/Bem-Estar-App',
         imagens: [
             './videos/app-bemestar.mp4',
         ]
@@ -107,6 +112,7 @@ document.querySelectorAll('.open-modal').forEach(
             document.getElementById('modal-img4').src = data.imagens[3]
             document.getElementById('modal-nome').innerText = data.nome
             document.getElementById('modal-descricao').innerText = data.descricao
+            document.getElementById('modal-github-btn').href = data.link
         }
 
         if(dataId == '4' || dataId == '1' || dataId == 5){

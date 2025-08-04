@@ -104,10 +104,10 @@ dialog::backdrop {
 .close-modal {
     width: 30px;
     height: 30px;
-    background: url(../img/icons8-close.svg) no-repeat center;
-    border-radius: 100%;
     padding: 16px;
     background-color: transparent;
+    color: whitesmoke;
+    font-size: 1.5rem;
     cursor: pointer;
     border: none;
     position: absolute;
